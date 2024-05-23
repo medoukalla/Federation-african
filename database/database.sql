@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `communique_de_presse`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `communique_de_presse` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `image` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `images` longtext COLLATE utf8mb4_unicode_ci,
+  `title` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `images` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `body` longblob,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -40,7 +40,6 @@ CREATE TABLE `communique_de_presse` (
 
 LOCK TABLES `communique_de_presse` WRITE;
 /*!40000 ALTER TABLE `communique_de_presse` DISABLE KEYS */;
-INSERT INTO `communique_de_presse` VALUES (1,'البطولة الوطنية شبان في رياضة الصامبو - Championnat National des Jeunes de Sambo‎','communique-de-presse/April2024/mxESOepfb50osgRLr7u3.JPG','[\"communique-de-presse\\/April2024\\/dT0m16pG5mtFDaQmfyFg.JPG\",\"communique-de-presse\\/April2024\\/WMnIQsC2SCOv3sYvq7Td.JPG\",\"communique-de-presse\\/April2024\\/cSg9LMpnQZxZmTfc2s5e.JPG\",\"communique-de-presse\\/April2024\\/p50lK0NI1i8u5XkElqcJ.JPG\",\"communique-de-presse\\/April2024\\/f9WMnhR6YxCYyN8DcuJy.JPG\",\"communique-de-presse\\/April2024\\/JEfS3Nr6EBj0ghLqFSQ1.JPG\",\"communique-de-presse\\/April2024\\/lIqn6CZvkzoZrrcopCmi.JPG\",\"communique-de-presse\\/April2024\\/B8OrjkdzqlZVAmdqOUO5.JPG\",\"communique-de-presse\\/April2024\\/1sRLhDBnItor419zDTLF.JPG\",\"communique-de-presse\\/April2024\\/aKDgXhC1GyDdOOovE2u5.JPG\",\"communique-de-presse\\/April2024\\/hDL6kTakarQyOmBjekpT.JPG\",\"communique-de-presse\\/April2024\\/Htnx6XUknjlI914VLj6t.JPG\",\"communique-de-presse\\/April2024\\/77Y4LWDLoEfK4npiMMyp.JPG\"]',_binary '<p><img src=\"http://localhost/storage/communique-de-presse/April2024/البطولة-الوطنية-في-رياضة-الصامبو-شبان-21-أبريل-2024.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-de-presse/April2024/Championnat-national-des-jeunes-de-Sambo-21.04.2024.jpg\" alt=\"\"></p>','2024-04-27 16:12:51','2024-04-27 16:22:45');
 /*!40000 ALTER TABLE `communique_de_presse` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,7 +59,7 @@ CREATE TABLE `communique_des_clubs` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,8 +68,39 @@ CREATE TABLE `communique_des_clubs` (
 
 LOCK TABLES `communique_des_clubs` WRITE;
 /*!40000 ALTER TABLE `communique_des_clubs` DISABLE KEYS */;
-INSERT INTO `communique_des_clubs` VALUES (1,'PASSAGE DE GRADE DE TAI JITSU','communique-des-clubs/April2024/V50QhAEIP8djdikE7QnK.jpg',NULL,'<p><img src=\"http://localhost/storage/communique-des-clubs/April2024/COMMUNIQUE.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/April2024/PROGRAMME  1ER DAN.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/April2024/PROGRAMME  2EME DAN.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/April2024/PROGRAMME  3EME DAN.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/April2024/PROGRAMME  4EME DAN.jpg\" alt=\"\"></p>','2024-04-27 06:49:36','2024-04-27 06:49:36');
+INSERT INTO `communique_des_clubs` VALUES (2,'African Sambo Championships 2024 Regulations ( English )','communique-des-clubs/May2024/80xgtBEM8zzRhK1jskh4.jpg',NULL,'<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_ENG (1)_page-0001.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_ENG (1)_page-0002.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_ENG (1)_page-0003.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_ENG (1)_page-0004.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_ENG (1)_page-0005.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_ENG (1)_page-0006.jpg\" alt=\"\"></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>','2024-05-23 11:42:22','2024-05-23 11:42:22'),(3,'African Sambo Championships 2024 Regulations ( Francais )','communique-des-clubs/May2024/xZ1GBLbsT1ik077oLnJ9.jpg',NULL,'<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0001.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0002.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0003.jpg\" alt=\"\"></p>\r\n<p>&nbsp;</p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0004.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0005.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0006.jpg\" alt=\"\"></p>\r\n<p><img src=\"http://localhost/storage/communique-des-clubs/May2024/African Sambo Championships 2024_Regulations_FR _page-0007.jpg\" alt=\"\"></p>\r\n<p>&nbsp;</p>','2024-05-23 12:04:28','2024-05-23 12:04:28');
 /*!40000 ALTER TABLE `communique_des_clubs` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `countries`
+--
+
+DROP TABLE IF EXISTS `countries`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `countries` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `logo` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `title` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `president` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `countries`
+--
+
+LOCK TABLES `countries` WRITE;
+/*!40000 ALTER TABLE `countries` DISABLE KEYS */;
+INSERT INTO `countries` VALUES (1,'ALGÉRIE','countries/May2024/soaFfnjgk44zlfG1TUoc.png','FÉDÉRATION NATIONALE DU SPORT POUR TOUS - COMITÉ NATIONAL ALGÉRIEN DE SAMBO','BENFAREH MOHAMED','+213 674 49 41 23','MCACSA2000@YAHOO.FR','2024-05-23 12:23:56','2024-05-23 12:23:56'),(2,'BENIN','countries/May2024/7VAmgS2Gvk1tbcrOMSBu.png','FÉDÉRATION BÉNINOISE DE SAMBO','RODRIGUE KPOCHEME','+229 97096565','KPOCHEMER@YAHOO.FR','2024-05-23 12:25:06','2024-05-23 12:25:06'),(3,'BURKINA FASO','countries/May2024/Yd28Py9Ef7lEUY8XMT7i.png','ASSOCIATION SPORTIVE BURKINABÉ  DE SAMBO','PRÉSIDENT : DAPLA PALENFO  -   SECRÉATIRE GENERAL : GUINDO AMIDOU','+226 72761120   -   +226 71875561','SAMBOBURKINA2020@GMAIL.COM','2024-05-23 12:35:01','2024-05-23 12:35:01'),(4,'CAMEROUN','countries/May2024/4s5M4a5ZJE7r0VVgrEST.png','FEDERATION CAMEROUNAISE DE  SAMBO','FRANÇOIS MBASSI','+237 99945995','MBASSIFRANOIS2005@YAHOO.FR','2024-05-23 12:36:03','2024-05-23 12:36:03'),(5,'CENTRAFRIQUE','countries/May2024/R4Lv4OXeJhalILxRJkFS.png','FÉDÉRATION CENTRAFRICAINE DE  SAMBO','CYRILLE MOBILIGNAWA','+236 75040871','CYRILLEMOBILI@GMAIL.COM','2024-05-23 13:31:06','2024-05-23 13:31:06'),(6,'COMORES','countries/May2024/82urY2FuPUKh4yyKIaGK.png','FÉDÉRATION COMORIENNE DE JUDO ET DISCIPLINES ASSOCIÉES','José Chakhrina Nourddine Abodo','+269 3608934','Judocomores@ymail.com','2024-05-23 13:33:08','2024-05-23 13:33:08');
+/*!40000 ALTER TABLE `countries` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -97,7 +127,7 @@ CREATE TABLE `data_rows` (
   PRIMARY KEY (`id`),
   KEY `data_rows_data_type_id_foreign` (`data_type_id`),
   CONSTRAINT `data_rows_data_type_id_foreign` FOREIGN KEY (`data_type_id`) REFERENCES `data_types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -106,7 +136,7 @@ CREATE TABLE `data_rows` (
 
 LOCK TABLES `data_rows` WRITE;
 /*!40000 ALTER TABLE `data_rows` DISABLE KEYS */;
-INSERT INTO `data_rows` VALUES (1,1,'id','number','ID',1,0,0,0,0,0,NULL,1),(2,1,'name','text','Name',1,1,1,1,1,1,NULL,2),(3,1,'email','text','Email',1,1,1,1,1,1,NULL,3),(4,1,'password','password','Password',1,0,0,1,1,0,NULL,4),(5,1,'remember_token','text','Remember Token',0,0,0,0,0,0,NULL,5),(6,1,'created_at','timestamp','Created At',0,1,1,0,0,0,NULL,6),(7,1,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,7),(8,1,'avatar','image','Avatar',0,1,1,1,1,1,NULL,8),(9,1,'user_belongsto_role_relationship','relationship','Role',0,1,1,1,1,0,'{\"model\":\"TCG\\\\Voyager\\\\Models\\\\Role\",\"table\":\"roles\",\"type\":\"belongsTo\",\"column\":\"role_id\",\"key\":\"id\",\"label\":\"display_name\",\"pivot_table\":\"roles\",\"pivot\":0}',10),(10,1,'user_belongstomany_role_relationship','relationship','Roles',0,1,1,1,1,0,'{\"model\":\"TCG\\\\Voyager\\\\Models\\\\Role\",\"table\":\"roles\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"display_name\",\"pivot_table\":\"user_roles\",\"pivot\":\"1\",\"taggable\":\"0\"}',11),(11,1,'settings','hidden','Settings',0,0,0,0,0,0,NULL,12),(12,2,'id','number','ID',1,0,0,0,0,0,NULL,1),(13,2,'name','text','Name',1,1,1,1,1,1,NULL,2),(14,2,'created_at','timestamp','Created At',0,0,0,0,0,0,NULL,3),(15,2,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,4),(16,3,'id','number','ID',1,0,0,0,0,0,NULL,1),(17,3,'name','text','Name',1,1,1,1,1,1,NULL,2),(18,3,'created_at','timestamp','Created At',0,0,0,0,0,0,NULL,3),(19,3,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,4),(20,3,'display_name','text','Display Name',1,1,1,1,1,1,NULL,5),(21,1,'role_id','text','Role',1,1,1,1,1,1,NULL,9),(22,4,'id','text','Id',1,0,0,0,0,0,'{}',1),(23,4,'title','text','Title',0,1,1,1,1,1,'{}',2),(24,4,'images','multiple_images','Images',0,1,1,1,1,1,'{}',3),(25,4,'created_at','timestamp','Created At',0,1,1,1,0,1,'{}',4),(26,4,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',5),(27,5,'id','text','Id',1,0,0,0,0,0,'{}',1),(28,5,'title','text','Title',0,1,1,1,1,1,'{}',2),(29,5,'image','image','Image',0,1,1,1,1,1,'{}',3),(30,5,'images','multiple_images','Images',0,0,1,1,1,1,'{}',4),(31,5,'body','rich_text_box','Body',0,1,1,1,1,1,'{}',5),(32,5,'created_at','timestamp','Created At',0,1,1,1,0,1,'{}',6),(33,5,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',7),(34,8,'id','text','Id',1,0,0,0,0,0,'{}',1),(35,8,'title','text','Title',0,1,1,1,1,1,'{}',2),(36,8,'image','image','Image',0,1,1,1,1,1,'{}',3),(37,8,'images','multiple_images','Images',0,0,1,1,1,1,'{}',4),(38,8,'body','rich_text_box','Body',0,0,1,1,1,1,'{}',5),(39,8,'created_at','timestamp','Created At',0,1,1,1,0,1,'{}',6),(40,8,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',7);
+INSERT INTO `data_rows` VALUES (1,1,'id','number','ID',1,0,0,0,0,0,NULL,1),(2,1,'name','text','Name',1,1,1,1,1,1,NULL,2),(3,1,'email','text','Email',1,1,1,1,1,1,NULL,3),(4,1,'password','password','Password',1,0,0,1,1,0,NULL,4),(5,1,'remember_token','text','Remember Token',0,0,0,0,0,0,NULL,5),(6,1,'created_at','timestamp','Created At',0,1,1,0,0,0,NULL,6),(7,1,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,7),(8,1,'avatar','image','Avatar',0,1,1,1,1,1,NULL,8),(9,1,'user_belongsto_role_relationship','relationship','Role',0,1,1,1,1,0,'{\"model\":\"TCG\\\\Voyager\\\\Models\\\\Role\",\"table\":\"roles\",\"type\":\"belongsTo\",\"column\":\"role_id\",\"key\":\"id\",\"label\":\"display_name\",\"pivot_table\":\"roles\",\"pivot\":0}',10),(10,1,'user_belongstomany_role_relationship','relationship','Roles',0,1,1,1,1,0,'{\"model\":\"TCG\\\\Voyager\\\\Models\\\\Role\",\"table\":\"roles\",\"type\":\"belongsToMany\",\"column\":\"id\",\"key\":\"id\",\"label\":\"display_name\",\"pivot_table\":\"user_roles\",\"pivot\":\"1\",\"taggable\":\"0\"}',11),(11,1,'settings','hidden','Settings',0,0,0,0,0,0,NULL,12),(12,2,'id','number','ID',1,0,0,0,0,0,NULL,1),(13,2,'name','text','Name',1,1,1,1,1,1,NULL,2),(14,2,'created_at','timestamp','Created At',0,0,0,0,0,0,NULL,3),(15,2,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,4),(16,3,'id','number','ID',1,0,0,0,0,0,NULL,1),(17,3,'name','text','Name',1,1,1,1,1,1,NULL,2),(18,3,'created_at','timestamp','Created At',0,0,0,0,0,0,NULL,3),(19,3,'updated_at','timestamp','Updated At',0,0,0,0,0,0,NULL,4),(20,3,'display_name','text','Display Name',1,1,1,1,1,1,NULL,5),(21,1,'role_id','text','Role',1,1,1,1,1,1,NULL,9),(22,4,'id','text','Id',1,0,0,0,0,0,'{}',1),(23,4,'title','text','Title',0,1,1,1,1,1,'{}',2),(24,4,'images','multiple_images','Images',0,1,1,1,1,1,'{}',3),(25,4,'created_at','timestamp','Created At',0,1,1,1,0,1,'{}',4),(26,4,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',5),(27,5,'id','text','Id',1,0,0,0,0,0,'{}',1),(28,5,'title','text','Title',0,1,1,1,1,1,'{}',2),(29,5,'image','image','Image',0,1,1,1,1,1,'{}',3),(30,5,'images','multiple_images','Images',0,0,1,1,1,1,'{}',4),(31,5,'body','rich_text_box','Body',0,1,1,1,1,1,'{}',5),(32,5,'created_at','timestamp','Created At',0,1,1,1,0,1,'{}',6),(33,5,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',7),(34,8,'id','text','Id',1,0,0,0,0,0,'{}',1),(35,8,'title','text','Title',0,1,1,1,1,1,'{}',2),(36,8,'image','image','Image',0,1,1,1,1,1,'{}',3),(37,8,'images','multiple_images','Images',0,0,1,1,1,1,'{}',4),(38,8,'body','rich_text_box','Body',0,0,1,1,1,1,'{}',5),(39,8,'created_at','timestamp','Created At',0,1,1,1,0,1,'{}',6),(40,8,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',7),(41,9,'id','text','Id',1,0,0,0,0,0,'{}',1),(42,9,'name','text','Name',0,1,1,1,1,1,'{}',3),(43,9,'job_title','text','Job Title',0,1,1,1,1,1,'{}',4),(44,9,'image','image','Image',0,1,1,1,1,1,'{}',2),(45,9,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',5),(46,9,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',6),(47,10,'id','text','Id',1,0,0,0,0,0,'{}',1),(48,10,'name','text','Name',0,1,1,1,1,1,'{}',3),(49,10,'logo','image','Logo',0,1,1,1,1,1,'{}',2),(50,10,'title','text','Title',0,0,1,1,1,1,'{}',4),(51,10,'president','text','President',0,1,1,1,1,1,'{}',5),(52,10,'phone','text','Phone',0,1,1,1,1,1,'{}',6),(53,10,'email','text','Email',0,0,1,1,1,1,'{}',7),(54,10,'created_at','timestamp','Created At',0,0,0,0,0,0,'{}',8),(55,10,'updated_at','timestamp','Updated At',0,0,0,0,0,0,'{}',9);
 /*!40000 ALTER TABLE `data_rows` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,7 +166,7 @@ CREATE TABLE `data_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `data_types_name_unique` (`name`),
   UNIQUE KEY `data_types_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -145,7 +175,7 @@ CREATE TABLE `data_types` (
 
 LOCK TABLES `data_types` WRITE;
 /*!40000 ALTER TABLE `data_types` DISABLE KEYS */;
-INSERT INTO `data_types` VALUES (1,'users','users','User','Users','voyager-person','TCG\\Voyager\\Models\\User','TCG\\Voyager\\Policies\\UserPolicy','TCG\\Voyager\\Http\\Controllers\\VoyagerUserController','',1,0,NULL,'2024-04-09 17:02:51','2024-04-09 17:02:51'),(2,'menus','menus','Menu','Menus','voyager-list','TCG\\Voyager\\Models\\Menu',NULL,'','',1,0,NULL,'2024-04-09 17:02:51','2024-04-09 17:02:51'),(3,'roles','roles','Role','Roles','voyager-lock','TCG\\Voyager\\Models\\Role',NULL,'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController','',1,0,NULL,'2024-04-09 17:02:51','2024-04-09 17:02:51'),(4,'images','images','Image','Images',NULL,'App\\Image',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2024-04-26 13:46:38','2024-04-26 13:53:24'),(5,'communique_des_clubs','communique-des-clubs','Communique Des Club','Communique Des Clubs',NULL,'App\\CommuniqueDesClub',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2024-04-27 06:37:37','2024-04-27 06:38:20'),(8,'communique_de_presse','communique-de-presse','Communique De Presse','Communique De Presses',NULL,'App\\CommuniqueDePresse',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null}','2024-04-27 16:08:23','2024-04-27 16:08:23');
+INSERT INTO `data_types` VALUES (1,'users','users','User','Users','voyager-person','TCG\\Voyager\\Models\\User','TCG\\Voyager\\Policies\\UserPolicy','TCG\\Voyager\\Http\\Controllers\\VoyagerUserController','',1,0,NULL,'2024-04-09 17:02:51','2024-04-09 17:02:51'),(2,'menus','menus','Menu','Menus','voyager-list','TCG\\Voyager\\Models\\Menu',NULL,'','',1,0,NULL,'2024-04-09 17:02:51','2024-04-09 17:02:51'),(3,'roles','roles','Role','Roles','voyager-lock','TCG\\Voyager\\Models\\Role',NULL,'TCG\\Voyager\\Http\\Controllers\\VoyagerRoleController','',1,0,NULL,'2024-04-09 17:02:51','2024-04-09 17:02:51'),(4,'images','images','Image','Images',NULL,'App\\Image',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2024-04-26 13:46:38','2024-04-26 13:53:24'),(5,'communique_des_clubs','communique-des-clubs','Communique Des Club','Communique Des Clubs',NULL,'App\\CommuniqueDesClub',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null,\"scope\":null}','2024-04-27 06:37:37','2024-04-27 06:38:20'),(8,'communique_de_presse','communique-de-presse','Communique De Presse','Communique De Presses',NULL,'App\\CommuniqueDePresse',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null}','2024-04-27 16:08:23','2024-04-27 16:08:23'),(9,'members','members','Member','Members',NULL,'App\\Member',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null}','2024-05-22 19:17:14','2024-05-22 19:17:14'),(10,'countries','countries','Country','Countries',NULL,'App\\Country',NULL,NULL,NULL,1,0,'{\"order_column\":null,\"order_display_column\":null,\"order_direction\":\"asc\",\"default_search_key\":null}','2024-05-23 12:18:58','2024-05-23 12:18:58');
 /*!40000 ALTER TABLE `data_types` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,8 +231,35 @@ CREATE TABLE `images` (
 
 LOCK TABLES `images` WRITE;
 /*!40000 ALTER TABLE `images` DISABLE KEYS */;
-INSERT INTO `images` VALUES (1,'CHAMPIONNAT NATIONAL DE SAMBO INDIVIDUEL SENIORS - البطولة الوطنية للصامبو الفردي كبار.','[\"images\\/April2024\\/PcOOGYnLAiy2QYNKsVOE.jpeg\",\"images\\/April2024\\/hCdJ0IVC7fqZ02oIBQJ0.jpeg\",\"images\\/April2024\\/Pr81Uhd9ctyda8V1otD2.jpeg\",\"images\\/April2024\\/G3Dgr0UCebT7DBoB9ORl.jpeg\",\"images\\/April2024\\/NzJHQU0ZPpWfRqkytVBz.jpeg\",\"images\\/April2024\\/MtaOYGt287p28Yzr9019.jpeg\",\"images\\/April2024\\/820XUvUWelt5jQIEC4E9.jpeg\",\"images\\/April2024\\/sk624NuXMCscSfl4JKgV.jpeg\",\"images\\/April2024\\/gdND4a7BbpqxyKgRFJJc.jpeg\",\"images\\/April2024\\/mGUky6wvB66OeXCzDtYD.jpeg\",\"images\\/April2024\\/JsLSObTSb3HS5FZyr5Fu.jpeg\",\"images\\/April2024\\/bw4k0sq5FWcpXhWRxOZp.jpeg\",\"images\\/April2024\\/imaoGXsASgDmtXIe36tP.jpeg\",\"images\\/April2024\\/OCJ8Oh03paD2tfFMu41y.jpeg\",\"images\\/April2024\\/AhvGbZfjrHf7o9UhRKrv.jpeg\",\"images\\/April2024\\/uHnI81nRFJoi6uGZobE5.jpeg\",\"images\\/April2024\\/YX1jS70BbdvDrgc3xLcF.jpeg\",\"images\\/April2024\\/QUXAXidbu7LajGyzEUZv.jpeg\",\"images\\/April2024\\/gsw7K1fyIY8S9EiFifZE.jpeg\"]','2024-04-26 13:54:13','2024-04-26 13:54:13'),(2,'البطولة الوطنية شبان في رياضة الصامبو - Championnat National des Jeunes de Sambo‎','[\"images\\/April2024\\/ERNQnQi7DJVt50DWvGPy.JPG\",\"images\\/April2024\\/Dh6Tko16nAQYkHGtNlED.JPG\",\"images\\/April2024\\/rvBvz5vtMC7lhYSErn7H.JPG\",\"images\\/April2024\\/XKZITDQhLPOOEwetXxDH.JPG\",\"images\\/April2024\\/6w1NwWLZENAf4rVTIGRS.JPG\",\"images\\/April2024\\/JiCbxVHgj5rFHPV2bB0C.JPG\",\"images\\/April2024\\/KpRpqvhB91S354fO8FHW.JPG\",\"images\\/April2024\\/aYtnNSnIO0KaIpLLf5v9.JPG\",\"images\\/April2024\\/29ExplE0NlKyov7OWQXy.JPG\",\"images\\/April2024\\/0wwSKQaXiRi7ThTuoxmH.JPG\",\"images\\/April2024\\/yw5aSib1zYe63IOkSG4H.JPG\",\"images\\/April2024\\/r9ADaeCPpnwwtL1Wy5Zn.JPG\",\"images\\/April2024\\/lPwyMw6Pd6wd8sLbYGhd.JPG\"]','2024-04-26 14:53:21','2024-04-26 14:53:21');
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `members`
+--
+
+DROP TABLE IF EXISTS `members`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `members` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `job_title` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `members`
+--
+
+LOCK TABLES `members` WRITE;
+/*!40000 ALTER TABLE `members` DISABLE KEYS */;
+INSERT INTO `members` VALUES (1,'KPOCHEME RODRIGUE ANGELO PELERIN',NULL,'members/May2024/LFzFvOyXMVyzHP1bP40r.jpeg','2024-05-22 19:19:14','2024-05-22 19:19:14'),(2,'BENFAREH MOHAMED',NULL,'members/May2024/zZUtQJVG6LWG51UCHn1j.JPG','2024-05-22 19:19:32','2024-05-22 19:19:32'),(3,'AICHATA FOFANA',NULL,'members/May2024/SZQC3CK4xqt3yd119ywq.jpg','2024-05-22 19:19:46','2024-05-22 19:19:46'),(4,'BAH AMADOU SADIGOU',NULL,'members/May2024/dwHM54dbLxGAW7AEayDp.jpg','2024-05-22 19:20:05','2024-05-22 19:20:05');
+/*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -229,7 +286,7 @@ CREATE TABLE `menu_items` (
   PRIMARY KEY (`id`),
   KEY `menu_items_menu_id_foreign` (`menu_id`),
   CONSTRAINT `menu_items_menu_id_foreign` FOREIGN KEY (`menu_id`) REFERENCES `menus` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -238,7 +295,7 @@ CREATE TABLE `menu_items` (
 
 LOCK TABLES `menu_items` WRITE;
 /*!40000 ALTER TABLE `menu_items` DISABLE KEYS */;
-INSERT INTO `menu_items` VALUES (1,1,'Dashboard','','_self','voyager-boat',NULL,NULL,1,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.dashboard',NULL),(2,1,'Media','','_self','voyager-images',NULL,NULL,5,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.media.index',NULL),(3,1,'Users','','_self','voyager-person',NULL,NULL,3,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.users.index',NULL),(4,1,'Roles','','_self','voyager-lock',NULL,NULL,2,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.roles.index',NULL),(5,1,'Tools','','_self','voyager-tools',NULL,NULL,9,'2024-04-09 17:02:52','2024-04-09 17:02:52',NULL,NULL),(6,1,'Menu Builder','','_self','voyager-list',NULL,5,10,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.menus.index',NULL),(7,1,'Database','','_self','voyager-data',NULL,5,11,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.database.index',NULL),(8,1,'Compass','','_self','voyager-compass',NULL,5,12,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.compass.index',NULL),(9,1,'BREAD','','_self','voyager-bread',NULL,5,13,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.bread.index',NULL),(10,1,'Settings','','_self','voyager-settings',NULL,NULL,14,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.settings.index',NULL),(11,1,'Images','','_self',NULL,NULL,NULL,15,'2024-04-26 13:46:38','2024-04-26 13:46:38','voyager.images.index',NULL),(12,1,'Communique Des Clubs','','_self',NULL,NULL,NULL,16,'2024-04-27 06:37:37','2024-04-27 06:37:37','voyager.communique-des-clubs.index',NULL),(15,1,'Communique De Presses','','_self',NULL,NULL,NULL,17,'2024-04-27 16:08:23','2024-04-27 16:08:23','voyager.communique-de-presse.index',NULL);
+INSERT INTO `menu_items` VALUES (1,1,'Dashboard','','_self','voyager-boat',NULL,NULL,1,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.dashboard',NULL),(2,1,'Media','','_self','voyager-images',NULL,NULL,5,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.media.index',NULL),(3,1,'Users','','_self','voyager-person',NULL,NULL,3,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.users.index',NULL),(4,1,'Roles','','_self','voyager-lock',NULL,NULL,2,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.roles.index',NULL),(5,1,'Tools','','_self','voyager-tools',NULL,NULL,9,'2024-04-09 17:02:52','2024-04-09 17:02:52',NULL,NULL),(6,1,'Menu Builder','','_self','voyager-list',NULL,5,10,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.menus.index',NULL),(7,1,'Database','','_self','voyager-data',NULL,5,11,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.database.index',NULL),(8,1,'Compass','','_self','voyager-compass',NULL,5,12,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.compass.index',NULL),(9,1,'BREAD','','_self','voyager-bread',NULL,5,13,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.bread.index',NULL),(10,1,'Settings','','_self','voyager-settings',NULL,NULL,14,'2024-04-09 17:02:52','2024-04-09 17:02:52','voyager.settings.index',NULL),(11,1,'Images','','_self',NULL,NULL,NULL,15,'2024-04-26 13:46:38','2024-04-26 13:46:38','voyager.images.index',NULL),(12,1,'Communique Des Clubs','','_self',NULL,NULL,NULL,16,'2024-04-27 06:37:37','2024-04-27 06:37:37','voyager.communique-des-clubs.index',NULL),(15,1,'Communique De Presses','','_self',NULL,NULL,NULL,17,'2024-04-27 16:08:23','2024-04-27 16:08:23','voyager.communique-de-presse.index',NULL),(16,1,'Members','','_self',NULL,NULL,NULL,18,'2024-05-22 19:17:14','2024-05-22 19:17:14','voyager.members.index',NULL),(17,1,'Countries','','_self',NULL,NULL,NULL,19,'2024-05-23 12:18:58','2024-05-23 12:18:58','voyager.countries.index',NULL);
 /*!40000 ALTER TABLE `menu_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -342,7 +399,7 @@ CREATE TABLE `permission_role` (
 
 LOCK TABLES `permission_role` WRITE;
 /*!40000 ALTER TABLE `permission_role` DISABLE KEYS */;
-INSERT INTO `permission_role` VALUES (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),(9,1),(10,1),(11,1),(12,1),(13,1),(14,1),(15,1),(16,1),(17,1),(18,1),(19,1),(20,1),(21,1),(22,1),(23,1),(24,1),(25,1),(26,1),(27,1),(28,1),(29,1),(30,1),(31,1),(32,1),(33,1),(34,1),(35,1),(46,1),(47,1),(48,1),(49,1),(50,1);
+INSERT INTO `permission_role` VALUES (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1),(9,1),(10,1),(11,1),(12,1),(13,1),(14,1),(15,1),(16,1),(17,1),(18,1),(19,1),(20,1),(21,1),(22,1),(23,1),(24,1),(25,1),(26,1),(27,1),(28,1),(29,1),(30,1),(31,1),(32,1),(33,1),(34,1),(35,1),(46,1),(47,1),(48,1),(49,1),(50,1),(51,1),(52,1),(53,1),(54,1),(55,1),(56,1),(57,1),(58,1),(59,1),(60,1);
 /*!40000 ALTER TABLE `permission_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -361,7 +418,7 @@ CREATE TABLE `permissions` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `permissions_key_index` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -370,7 +427,7 @@ CREATE TABLE `permissions` (
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (1,'browse_admin',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(2,'browse_bread',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(3,'browse_database',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(4,'browse_media',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(5,'browse_compass',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(6,'browse_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(7,'read_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(8,'edit_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(9,'add_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(10,'delete_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(11,'browse_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(12,'read_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(13,'edit_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(14,'add_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(15,'delete_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(16,'browse_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(17,'read_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(18,'edit_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(19,'add_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(20,'delete_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(21,'browse_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(22,'read_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(23,'edit_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(24,'add_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(25,'delete_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(26,'browse_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(27,'read_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(28,'edit_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(29,'add_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(30,'delete_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(31,'browse_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(32,'read_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(33,'edit_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(34,'add_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(35,'delete_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(46,'browse_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(47,'read_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(48,'edit_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(49,'add_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(50,'delete_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23');
+INSERT INTO `permissions` VALUES (1,'browse_admin',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(2,'browse_bread',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(3,'browse_database',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(4,'browse_media',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(5,'browse_compass',NULL,'2024-04-09 17:02:52','2024-04-09 17:02:52'),(6,'browse_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(7,'read_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(8,'edit_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(9,'add_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(10,'delete_menus','menus','2024-04-09 17:02:52','2024-04-09 17:02:52'),(11,'browse_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(12,'read_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(13,'edit_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(14,'add_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(15,'delete_roles','roles','2024-04-09 17:02:52','2024-04-09 17:02:52'),(16,'browse_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(17,'read_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(18,'edit_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(19,'add_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(20,'delete_users','users','2024-04-09 17:02:52','2024-04-09 17:02:52'),(21,'browse_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(22,'read_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(23,'edit_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(24,'add_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(25,'delete_settings','settings','2024-04-09 17:02:52','2024-04-09 17:02:52'),(26,'browse_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(27,'read_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(28,'edit_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(29,'add_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(30,'delete_images','images','2024-04-26 13:46:38','2024-04-26 13:46:38'),(31,'browse_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(32,'read_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(33,'edit_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(34,'add_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(35,'delete_communique_des_clubs','communique_des_clubs','2024-04-27 06:37:37','2024-04-27 06:37:37'),(46,'browse_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(47,'read_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(48,'edit_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(49,'add_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(50,'delete_communique_de_presse','communique_de_presse','2024-04-27 16:08:23','2024-04-27 16:08:23'),(51,'browse_members','members','2024-05-22 19:17:14','2024-05-22 19:17:14'),(52,'read_members','members','2024-05-22 19:17:14','2024-05-22 19:17:14'),(53,'edit_members','members','2024-05-22 19:17:14','2024-05-22 19:17:14'),(54,'add_members','members','2024-05-22 19:17:14','2024-05-22 19:17:14'),(55,'delete_members','members','2024-05-22 19:17:14','2024-05-22 19:17:14'),(56,'browse_countries','countries','2024-05-23 12:18:58','2024-05-23 12:18:58'),(57,'read_countries','countries','2024-05-23 12:18:58','2024-05-23 12:18:58'),(58,'edit_countries','countries','2024-05-23 12:18:58','2024-05-23 12:18:58'),(59,'add_countries','countries','2024-05-23 12:18:58','2024-05-23 12:18:58'),(60,'delete_countries','countries','2024-05-23 12:18:58','2024-05-23 12:18:58');
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -568,4 +625,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-27 17:24:10
+-- Dump completed on 2024-05-23 14:36:53
