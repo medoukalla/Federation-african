@@ -5,11 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>FÉDÉRATION ROYALE MAROCAINE DE SAMBO ET TAI JITSU</title>
+    <title>Confédération africaine de sambo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/federation_logo.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/confederation.ico">
     
     <!-- CSS
 	============================================ -->

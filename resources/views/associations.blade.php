@@ -11,58 +11,55 @@
 
         <!-- Partners  -->
         <div class="row">
-            <div class="col-12 mb-50" >
-                
-                <!-- Post Block Wrapper Start -->
-                <div class="post-block-wrapper">
-                    
-                    <!-- Post Block Head Start -->
-                    <div class="head sports-head">
-                        
-                        <!-- Title -->
-                        <h4 class="title">ANNEXE I LISTE DES CLUBS AFFILIES A LA LIGUE CENTRE NORD</h4>
-                        
-                    </div><!-- Post Block Head End -->
-                    
-                    <!-- Post Block Body Start -->
-                    <div class="body">
-                        
-                        <img src="{{ asset('img/LISTE-DES-CLUBS-AFFILIES-A-LA-LIGUE-CENTRE-NORD.jpg') }}" alt="" class="w-100">
-                    
-                    </div><!-- Post Block Body End -->
-                    
-                </div><!-- Post Block Wrapper End -->
-                
-            </div>
 
+                
             <div class="col-12 mb-50" >
                 
-                <!-- Post Block Wrapper Start -->
                 <div class="post-block-wrapper">
-                    
-                    <!-- Post Block Head Start -->
                     <div class="head sports-head">
-                        
-                        <!-- Title -->
-                        <h4 class="title">ANNEXE II LISTE DES CLUBS AFFILIES A LA LIGUE CENTRE SUD</h4>
-                        
-                    </div><!-- Post Block Head End -->
+                        <h4 class="title">Liste et contact des pays africains affiliés à la Confédération Africaine de Sambo</h4>
+                    </div>
                     
-                    <!-- Post Block Body Start -->
-                    <div class="body">
+                    <div class="body row">
                         
-                        <img src="{{ asset('img/ANNEXE II LISTE DES CLUBS AFFILIES A LA LIGUE CENTRE SUD.jpg') }}" alt="" class="w-100">
-                    
-                    </div><!-- Post Block Body End -->
-                    
-                </div><!-- Post Block Wrapper End -->
+                        @foreach ( $countries as $key=> $country )
+                            <div class="col-4 mb-4">
+                                <div class="card bg-white">
+                                    <div data-target="body{{$key}}" class="card-header clicker d-flex" style="justify-content: space-evenly; cursor: pointer;">
+                                        <img src="{{ asset('storage/'.$country->logo) }}" alt="" style="width:50px"; >
+                                        <h5 style="padding-top:12px;">{{ $country->name }}</h5>
+                                    </div>
+                                    <div id="body{{$key}}" class="card-body"  style="display: none;">
+                                        <h5>FÉDÉRATION / ASSOCIATION : <br><b>{{ $country->title }}</b></h5><hr>
+                                        <h5>PRÉSIDENT / RESPONSABLE : <br><b>{{ $country->president }}</b></h5><hr>
+                                        <h5>TÉLÉPHONE : <br><b>{{ $country->phone }}</b></h5><hr>
+                                        <h5>TÉLÉPHONE : <br><b>{{ $country->email }}</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+
+                    </div>
+                </div>
                 
-            </div>
+            </div> 
+
+
         </div>
     </div>
 </div>
 <!-- Post Section End -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function() {
+        $('.clicker').click(function(){
+            var target = $(this).data('target');
+            $(this).addClass('active');
+            $("div#"+target).toggle(500);
+        })
+    })
+</script>
 
 <x-social-media />
 

@@ -43,12 +43,12 @@
                                          <div class="post post-overlay gadgets-post">
                                              <div class="post-wrap" style=" max-height: 200px !important; overflow: hidden; " >
              
-                                                 <!-- Image -->
+                                                 {{-- <!-- Image -->
                                                  <a href="https://www.youtube.com/watch?v=iZnvxxcU0bA" class="image video-popup">
                                                      <img style="max-height: 180px !important;" src="img/newide.png" alt="post">
                                                      <!-- Video Popup -->
                                                      <span class="video-btn"><i class="fa fa-play"></i></span>
-                                                 </a>
+                                                 </a> --}}
              
                                                  <!-- <a href="#" class="category gadgets">gadgets</a> -->
              

@@ -5,7 +5,7 @@
             <div class="col">
                 <div class="row row-1">
 
-                    <div class="col-lg-9 col-md-6 col-12">
+                    <div class="col-12">
 
                         <!-- Overlay Post Start -->
                         <div class="post post-large post-overlay hero-post">
@@ -33,37 +33,6 @@
                         </div><!-- Overlay Post End -->
                             
                     </div>
-
-                    <div class="col-lg-3 col-md-6 col-12">
-
-                        <!-- Overlay Post Start -->
-                        <div class="post post-large post-overlay hero-post">
-                            <div class="post-wrap">
-
-                                <!-- Image -->
-                                <div class="image heroImg"><img src="{{ asset('img/SM.48381ddc.jpeg') }}" alt="post"></div>
-
-                                <!-- Category -->
-                                <!-- <a href="#" class="category fashion">fashion</a> -->
-
-                                <!-- Content -->
-                                <div class="content">
-
-                                    <!-- Title -->
-                                    <h2 class="title"><a href="#"></a></h2>
-
-                                    <!-- Meta -->
-                                    <!-- <div class="meta fix">
-                                        <span class="meta-item date"><i class="fa fa-clock-o"></i>10 March 2023</span>
-                                    </div> -->
-
-                                </div>
-
-                            </div>
-                        </div><!-- Overlay Post End -->
-                            
-                    </div>
-
 
                 </div>
             </div>

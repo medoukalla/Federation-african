@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');
 
 // historique de la fédération
-Route::get('historique_de_la_federation', [FrontendController::class, 'historique_de_la_federation'])->name('frontend.historique_de_la_federation');
+Route::get('historique', [FrontendController::class, 'historique_de_la_federation'])->name('frontend.historique_de_la_federation');
 
 
 // historique du sambo au maroc
@@ -49,7 +49,7 @@ Route::get('ligue_nord', [FrontendController::class, 'ligue_nord'])->name('front
 Route::get('ligue_centre_sud', [FrontendController::class, 'ligue_centre_sud'])->name('frontend.ligue_centre_sud');
 
 // associations
-Route::get('associations', [FrontendController::class, 'associations'])->name('frontend.associations');
+Route::get('federation_affilie', [FrontendController::class, 'associations'])->name('frontend.associations');
 
 
 // communique_de_presse

@@ -45,7 +45,7 @@
                             <span class="meta-item date text-light"><i class="fa fa-clock-o"></i>Mot du Président</span>
                         </div>
 
-                        <p class="text-light">
+                        <p class="text-light d-none">
                             Mesdames, Messieurs, Chers amis sportifs, Le Sambo et le Tai Jitsu, au travers leurs valeurs sportives et humaines universelles, de courage, de solidarité, mais aussi de forte convivialité, peuvent rassembler malgré les différences ethniques, idéologiques ou politiques.
                             <br>
                             Ces valeurs que les associations membres de notre Fédération, et bien entendu la Fédération Royale Marocaine de Sambo et Tai Jitsu elle-même, défendent avec abnégation et sans relâche.

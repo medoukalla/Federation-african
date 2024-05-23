@@ -6,20 +6,13 @@
             <div class="col-12">
 
                 <div class="row">
-                    <div class="col-2 banner text-center offset-1 offset-md-0">
-                        <a href="#"><img src="{{ asset('img/partners/MENPS.jpg') }}" style="max-height: 125px;" alt="Header Banner"></a>
+                    
+                    <div class="col banner text-center ">
+                        <a href="{{ route('frontend.index') }}"><img src="{{ asset('img/partners/C.A.S.png') }}" style="max-height: 125px;" alt="Header Banner"></a>
                     </div>
-                    <div class="col-2 banner text-center ">
-                        <a href="#"><img src="{{ asset('img/cnom-le-comite-national-olympique-marocain-seeklogo.com.webp') }}" style="max-height: 125px;" alt="Header Banner"></a>
-                    </div>
-                    <div class="col-2 col-lg-4 banner text-center ">
-                        <a href="#"><img src="{{ asset('img/FRMSTJ-logo.webp') }}" style="max-height: 125px;" alt="Header Banner"></a>
-                    </div>
-                    <div class="col-2 banner text-center ">
-                        <a href="#"><img src="{{ asset('img/partners/FIAS.png') }}" style="max-height: 125px;" alt="Header Banner"></a>
-                    </div>
-                    <div class="col-2 banner text-center ">
-                        <a href="#"><img src="{{ asset('img/partners/C.A.S.png') }}" style="max-height: 125px;" alt="Header Banner"></a>
+                    
+                    <div class="col banner text-center ">
+                        <a href="{{ route('frontend.index') }}"><img src="{{ asset('img/partners/FIAS.png') }}" style="max-height: 125px;" alt="Header Banner"></a>
                     </div>
                 </div>
             </div>
@@ -28,7 +21,7 @@
                 <div class="wrapper" style="background-color: transparent !important; margin-top: -30px;">
                     <svg>
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                             FÉDÉRATION ROYALE MAROCAINE DE SAMBO ET TAI JITSU
+                            Confédération africaine de sambo
                         </text>
                     </svg>
                 </div>
@@ -38,17 +31,12 @@
                 <div class="wrapper" style="background-color: transparent !important; margin-top: -30px;">
                     <svg>
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                             FÉDÉRATION ROYALE
+                            Confédération africaine
                         </text>
                     </svg>
                     <svg class="second-svg">
                         <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                             MAROCAINE DE SAMBO
-                        </text>
-                    </svg>
-                    <svg class="third-svg">
-                        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                             ET TAI JITSU
+                            de sambo
                         </text>
                     </svg>
                 </div>
@@ -73,40 +61,14 @@
                         <nav>
                             <ul>
                                 <li><a href="{{ route('frontend.index') }}">Mot de président</a></li>
-                                <li class="active has-dropdown">
-                                    <a href="Javascript:;">HISTORIQUE</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu">
-                                        <li><a href="{{ route('frontend.historique_de_la_federation') }}">historique de LA FÉDÉRATION</a></li>
-                                        <li><a href="{{ route('frontend.historique_du_sambo_au_maroc') }}">HISTORIQUE DU SAMBO AU MAROC</a></li>
-                                    </ul><!-- Submenu End -->
-                                    
-                                </li>
+
+                                <li><a href="{{ route('frontend.historique_de_la_federation') }}">HISTORIQUE</a></li>
+
+                                <li><a href="{{ route('frontend.members') }}">Membres de bureau (C.A.S.)</a></li>
+                                
                                 <li><a href="{{ route('frontend.calendrier') }}">Calendrier</a></li>
-                                <li><a href="{{ route('frontend.members') }}">Membres</a></li>
-                                
-                                <li class="active has-dropdown"><a href="Javascript:;">Galerie</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu">
-                                        <li><a href="{{ route('frontend.images') }}">Les images</a></li>
-                                        <li><a href="{{ route('frontend.videos') }}">Les vidéos</a></li>
-                                    </ul><!-- Submenu End -->
-                                    
-                                </li>
-                                
-                                
-                                <li class="active has-dropdown"><a href="Javascript:;">Ligues</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu">
-                                        <li><a href="{{ route('frontend.ligue_nord') }}">Ligue  Centre Nord</a></li>
-                                        <li><a href="{{ route('frontend.ligue_centre_sud') }}">Ligue Centre Sud</a></li>
-                                    </ul><!-- Submenu End -->
-                                    
-                                </li>
-                                <li><a href="{{ route('frontend.associations') }}">Associations</a></li>
+
+                                <li><a href="{{ route('frontend.associations') }}">Fédération affilié</a></li>
 
                                 <li class="active has-dropdown"><a href="Javascript:;">Événements</a>
                                     
@@ -118,8 +80,17 @@
                                     <!-- Submenu End -->
                                     
                                 </li>
-
-                                <li><a href="{{ route('frontend.presse') }}">La presse</a></li>
+                                
+                                
+                                <li class="active has-dropdown"><a href="Javascript:;">Galerie</a>
+                                    
+                                    <!-- Submenu Start -->
+                                    <ul class="sub-menu">
+                                        <li><a href="{{ route('frontend.images') }}">Les images</a></li>
+                                        <li><a href="{{ route('frontend.videos') }}">Les vidéos</a></li>
+                                    </ul><!-- Submenu End -->
+                                    
+                                </li>
 
 
                             </ul>
@@ -140,56 +111,39 @@
                                     <ul style="display: none;" class="mobile-main-menu">
                 
                                         <li><a href="{{ route('frontend.index') }}">Mot de président</a></li>
-                                <li class="has-dropdown">
-                                    <a href="Javascript:;" onclick="$('ul.hestorique-menu').toggle();">HISTORIQUE</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu hestorique-menu" style="display: none;">
-                                        <li><a href="{{ route('frontend.historique_de_la_federation') }}">historique de LA FÉDÉRATION</a></li>
-                                        <li><a href="{{ route('frontend.historique_du_sambo_au_maroc') }}">HISTORIQUE DU SAMBO AU MAROC</a></li>
-                                    </ul><!-- Submenu End -->
-                                    
-                                </li>
-                                <li><a href="{{ route('frontend.calendrier') }}">Calendrier</a></li>
-                                <li><a href="{{ route('frontend.members') }}">Membres</a></li>
-                                
-                                <li class="has-dropdown">
-                                    <a href="Javascript:;" onclick="$('ul.galery-menu').toggle();">Galerie</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu galery-menu" style="display: none;">
-                                        <li><a href="{{ route('frontend.images') }}">Les images</a></li>
-                                        <li><a href="{{ route('frontend.videos') }}">Les vidéos</a></li>
-                                    </ul><!-- Submenu End -->
-                                    
-                                </li>
-                                
-                                
-                                <li class="has-dropdown">
-                                    <a href="Javascript:;" onclick="$('ul.ligues-menu').toggle();">Ligues</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu ligues-menu" style="display: none;">
-                                        <li><a href="{{ route('frontend.ligue_nord') }}">Ligue Centre Nord</a></li>
-                                        <li><a href="{{ route('frontend.ligue_centre_sud') }}">Ligue Centre Sud</a></li>
-                                    </ul><!-- Submenu End -->
-                                    
-                                </li>
-                                <li><a href="{{ route('frontend.associations') }}">Associations</a></li>
 
-                                <li class="has-dropdown">
-                                    <a href="Javascript:;" onclick="$('ul.evenements-menu').toggle();">Événements</a>
-                                    
-                                    <!-- Submenu Start -->
-                                    <ul class="sub-menu evenements-menu" style="display: none">
-                                        <li><a href="{{ route('frontend.communique_de_presse') }}">Communiqué de presse</a></li>
-                                        <li><a href="{{ route('frontend.communique_des_clubs') }}">Communiqué des clubs</a></li>
-                                    </ul>
-                                    <!-- Submenu End -->
-                                    
-                                </li>
+                                        <li><a href="{{ route('frontend.historique_de_la_federation') }}">HISTORIQUE</a></li>
 
-                                <li><a href="{{ route('frontend.presse') }}">La presse</a></li>
+                                        <li><a href="{{ route('frontend.members') }}">Membres de bureau (C.A.S.)</a></li>
+
+                                        <li><a href="{{ route('frontend.calendrier') }}">Calendrier</a></li>
+
+                                        <li><a href="{{ route('frontend.associations') }}">>Fédération affilié</a></li>
+
+                                        <li class="has-dropdown">
+                                            <a href="Javascript:;" onclick="$('ul.evenements-menu').toggle();">Événements</a>
+                                            
+                                            <!-- Submenu Start -->
+                                            <ul class="sub-menu evenements-menu" style="display: none">
+                                                <li><a href="{{ route('frontend.communique_de_presse') }}">Communiqué de presse</a></li>
+                                                <li><a href="{{ route('frontend.communique_des_clubs') }}">Communiqué des clubs</a></li>
+                                            </ul>
+                                            <!-- Submenu End -->
+                                            
+                                        </li>
+
+                                        
+                                        <li class="has-dropdown">
+                                            <a href="Javascript:;" onclick="$('ul.galery-menu').toggle();">Galerie</a>
+                                            
+                                            <!-- Submenu Start -->
+                                            <ul class="sub-menu galery-menu" style="display: none;">
+                                                <li><a href="{{ route('frontend.images') }}">Les images</a></li>
+                                                <li><a href="{{ route('frontend.videos') }}">Les vidéos</a></li>
+                                            </ul><!-- Submenu End -->
+                                            
+                                        </li>
+                                
                 
                                     </ul>
                                 </nav>

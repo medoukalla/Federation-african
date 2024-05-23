@@ -20,14 +20,14 @@
                     <div class="head sports-head">
                         
                         <!-- Title -->
-                        <h4 class="title">Membres du bureau Fédéral</h4>
+                        <h4 class="title">MEMBRES DU BUREAU DE LA C.A.S.</h4>
                         
                     </div><!-- Post Block Head End -->
                     
                     <!-- Post Block Body Start -->
                     <div class="body">
                         
-                        <div class="row">
+                        {{-- <div class="row">
                             <div class="col-lg-4">
                                 <div class="card p-0">
                                     <div class="card-image">
@@ -40,178 +40,23 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><hr>
-
-
-                        <div class="row">
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/FADLALLAH CHAJAEDDINE.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>1er Vice Président</h4>
-                                        <h5>Fadl Allah CHAJADINE</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/ASMAA EDDAHAR.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>2ème Vice-Président</h4>
-                                        <h5>Asmaâ EDDAHAR</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/MOHAMMED ABEROUZ.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Secrétaire Général</h4>
-                                        <h5>Mohammed ABEROUZ</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img//SONIA MENJOUR.png') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Secrétaire Général Adjoint</h4>
-                                        <h5>Sonia MENJOUR</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/MOHAMMED SAMIR AZENNOUD.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Trésorier Général</h4>
-                                        <h5>Mohammed Samir AZENNOUD</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/IMAD MOHAMED.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Trésorier Général Adjoint</h4>
-                                        <h5>Mohamed IMAD</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><hr>
-
-
+                        </div><hr> --}}
 
                         <div class="row">
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/AMMARI ABDALLAH.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Abdallah AMMARI</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/EL KHALDI ABDERAHIM.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Abderrahim EL KHALDI</h5>
+                            @foreach ( $members as $member )
+                                
+                                <div class="col-lg-4 mb-3">
+                                    <div class="card p-0">
+                                        <div class="card-image">
+                                            <img src="{{ asset('storage/'.$member->image) }}"
+                                                alt="">
+                                        </div>
+                                        <div class="card-content d-flex flex-column align-items-center smallHeadline " style=" background-color: rgb(6 6 6 / 20%) !important; ">
+                                            <h4 style=" color: white !important; font-size: 18px !important; ">{{ $member->name }}</h4>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/ADIL LOUMAME.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Adil LOUMAME</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/BERRADA FATHI OTHMAN.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Othman BERRADA FATHI</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/AIT RABAI KHALID.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Khalid AIT RABAI</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/NADIA KARIM.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Nadia KARIM</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 mb-3">
-                                <div class="card p-0">
-                                    <div class="card-image">
-                                        <img src="{{ asset('img/IMADOU EDDINE MOHAMED.JPG') }}"
-                                            alt="">
-                                    </div>
-                                    <div class="card-content d-flex flex-column align-items-center smallHeadline ">
-                                        <h4>Assesseur</h4>
-                                        <h5>Mohamed IMADOU-EDDINE</h5>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
 
                     

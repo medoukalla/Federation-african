@@ -15,14 +15,14 @@
                         
                         <!-- Footer Contact -->
                         <ol class="footer-contact">
-                            <li><i class="fa fa-home"></i>Résidence Al Wifak, 264 Route d'el Jadida, angle rue des Acacias, 3ème étage, appartement N30, Casablanca</li>
-                            <li><i class="fa fa-envelope-open"></i>frmstj@gmail.com</li>
-                            <li><i class="fa fa-headphones"></i>Fax : (05 22 36 27 70) , Tel : (05 22 36 27 70 / 06 61 85 38 49)</li>
+                            <li><i class="fa fa-home"></i>Addresse</li>
+                            <li><i class="fa fa-envelope-open"></i>example@gmail.com</li>
+                            <li><i class="fa fa-headphones"></i>Fax : (05 12 34 56 78) , Tel : (05 12 34 56 78 / 05 12 34 56 78)</li>
                         </ol>
                         
                         <!-- Footer Social -->
                         <div class="footer-social">
-                            <a href="https://www.facebook.com/profile.php?id=100054454420914" target="blanck" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="blanck" class="facebook"><i class="fa fa-facebook"></i></a>
                             <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                             <a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a>
                             <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->

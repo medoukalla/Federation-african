@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\CommuniqueDePresse;
 use App\CommuniqueDesClub;
+use App\Country;
 use App\Image;
+use App\Member;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -31,7 +33,9 @@ class FrontendController extends Controller
 
     // members 
     public function members() {
-        return view('members');
+        return view('members',[
+            'members' => Member::all(),
+        ]);
     }
 
     // images
@@ -58,7 +62,12 @@ class FrontendController extends Controller
 
     // associations
     public function associations() {
-        return view('associations');
+
+        $countries = Country::get();
+
+        return view('associations',[
+            'countries' => $countries
+        ]);
     }
 
     // communique_de_presse
