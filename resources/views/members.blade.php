@@ -27,35 +27,40 @@
                     <!-- Post Block Body Start -->
                     <div class="body">
                         
-                        {{-- <div class="row">
+                        <div class="row">
                             <div class="col-lg-4">
                                 <div class="card p-0">
                                     <div class="card-image">
                                         <img src="{{ asset('img/mr_dalil_skali.jpeg') }}"
                                             alt="">
                                     </div>
-                                    <div class="card-content d-flex flex-column align-items-center">
-                                        <h4>Président</h4>
-                                        <h5>Sidi Mohamed DALIL ESSAKALI</h5>
+                                    <div class="card-content d-flex flex-column align-items-center smallHeadline " style=" background-color: rgb(6 6 6 / 20%) !important; ">
+                                        <h4 style="color: white !important; font-size: 18px !important; ">Sidi Mohamed DALIL ESSAKALI</h4>
+                                        <h5 style="color: white !important;margin-top: -10px !important;">Président</h5>
                                     </div>
                                 </div>
                             </div>
-                        </div><hr> --}}
+                        </div><hr>
 
                         <div class="row">
                             @foreach ( $members as $member )
-                                
-                                <div class="col-lg-4 mb-3">
-                                    <div class="card p-0">
-                                        <div class="card-image">
-                                            <img src="{{ asset('storage/'.$member->image) }}"
-                                                alt="">
-                                        </div>
-                                        <div class="card-content d-flex flex-column align-items-center smallHeadline " style=" background-color: rgb(6 6 6 / 20%) !important; ">
-                                            <h4 style=" color: white !important; font-size: 18px !important; ">{{ $member->name }}</h4>
+                                @if ( $member->id > 5 )
+                                    
+                                    <div class="col-lg-4 mb-3">
+                                        <div class="card p-0">
+                                            <div class="card-image">
+                                                <img src="{{ asset('storage/'.$member->image) }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="card-content d-flex flex-column align-items-center smallHeadline " style=" background-color: rgb(6 6 6 / 20%) !important; ">
+                                                <h4 style=" color: white !important; font-size: 18px !important; ">{{ $member->name }}</h4>
+                                                <h5 style="color: white !important;margin-top: -10px !important;">{{ $member->job_title}}</h5>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+
+                                @endif
+
                             @endforeach
                         </div>
 
@@ -97,6 +102,7 @@
     
     .card .card-image img {
         max-height: 340px;
+        min-height: 340px;
         /* object-fit: cover; */
     }
     

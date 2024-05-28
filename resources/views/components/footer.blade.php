@@ -15,9 +15,9 @@
                         
                         <!-- Footer Contact -->
                         <ol class="footer-contact">
-                            <li><i class="fa fa-home"></i>Addresse</li>
-                            <li><i class="fa fa-envelope-open"></i>example@gmail.com</li>
-                            <li><i class="fa fa-headphones"></i>Fax : (05 12 34 56 78) , Tel : (05 12 34 56 78 / 05 12 34 56 78)</li>
+                            <li><i class="fa fa-home"></i>Résidence Al Wifak, 264 Route d'el Jadida, angle rue des Acacias, 3ème étage, appartement N30, Casablanca                            </li>
+                            <li><i class="fa fa-envelope-open"></i>confederationafricainedesambo@gmail.com</li>
+                            <li><i class="fa fa-headphones"></i>Fax : (05 22 36 27 70) , Tel : (05 22 36 27 70 / 06 61 85 38 49)</li>
                         </ol>
                         
                         <!-- Footer Social -->

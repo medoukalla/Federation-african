@@ -27,7 +27,7 @@
                     <!-- Post Block Body Start -->
                     <div class="body">
                        
-                        {{-- <img src="{{ asset('img/New Calendrier National FRMSTJ 2023-2024 N.jpg') }}" alt="" class="w-100"> --}}
+                        {!! setting('calendrie.calendrie') !!}
                     
                     </div><!-- Post Block Body End -->
                     
