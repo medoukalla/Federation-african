@@ -32,7 +32,7 @@
                                 <div class="sidebar-social-follow">
 
                                     <div>
-                                        <a href="https://web.facebook.com/profile.php?id=100054454420914" target="_blanck" class="facebook">
+                                        <a href="#" target="_blanck" class="facebook">
                                             <i class="fa fa-facebook"></i>
                                             <h3>+2,600</h3>
                                             <span>Ventilateurs</span>
@@ -108,7 +108,7 @@
                                                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Votre adresse e-mail" required>
                                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
-                                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Soumettre</button>
+                                                <button type="button" name="subscribe" id="mc-embedded-subscribe" class="button">Soumettre</button>
                                             </div>
                                         </form>
                                     </div>

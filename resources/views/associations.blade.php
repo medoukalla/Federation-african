@@ -20,10 +20,10 @@
                         <h4 class="title">Liste et contact des pays africains affiliés à la Confédération Africaine de Sambo</h4>
                     </div>
                     
-                    <div class="body row">
+                    <div class="body row px-0 mx-0">
                         
                         @foreach ( $countries as $key=> $country )
-                            <div class="col-4 mb-4">
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card bg-white">
                                     <div data-target="body{{$key}}" class="card-header clicker d-flex" style="justify-content: space-evenly; cursor: pointer;">
                                         <img src="{{ asset('storage/'.$country->logo) }}" alt="" style="width:50px"; >
@@ -33,7 +33,7 @@
                                         <h5>FÉDÉRATION / ASSOCIATION : <br><b>{{ $country->title }}</b></h5><hr>
                                         <h5>PRÉSIDENT / RESPONSABLE : <br><b>{{ $country->president }}</b></h5><hr>
                                         <h5>TÉLÉPHONE : <br><b>{{ $country->phone }}</b></h5><hr>
-                                        <h5>TÉLÉPHONE : <br><b>{{ $country->email }}</b></h5>
+                                        <h5>ADRESSE MAIL : <br><b>{{ $country->email }}</b></h5>
                                     </div>
                                 </div>
                             </div>

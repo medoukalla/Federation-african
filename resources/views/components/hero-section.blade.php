@@ -23,7 +23,7 @@
                                     <!-- Title -->
                                     <h2 class="title">
                                         <a href="#">
-                                            Le Président de la FRMSTJ Mr Dalil SKALLI avec Le Président de la FIAS Mr SHESTAKOV VASSILLY
+                                            Le Président de la Confédération africaine de sambo Mr Dalil SKALLI avec Le Président de la FIAS Mr SHESTAKOV VASSILLY
                                         </a>
                                     </h2>
 

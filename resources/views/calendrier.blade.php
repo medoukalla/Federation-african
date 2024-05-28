@@ -40,8 +40,11 @@
 </div>
 <!-- Post Section End -->
 
-
-
+<style>
+.post-block-wrapper .body img {
+    max-width: 100% !important;
+}
+</style>
 <x-social-media />
 
 <x-footer />
